@@ -4,8 +4,8 @@ const { Schema } = mongoose;
 const userSchema = new Schema({
   fullName: {type:String,required:true},
   userName: {type:String,required:true},
-  Gender: { type: String,
-    enum: [ "Male", "Female","Other" ]
+  gender: { type: String,
+    enum: [ "Male", "Female","Other" ], default: 'Male'
   },
   email: {type:String,required:true},
   password: {type:String,required:true},
